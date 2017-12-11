@@ -1,0 +1,32 @@
+
+h1 {
+	color: #CBDA14;
+}
+
+body {
+	background: url("https://www.nasa.gov/sites/default/files/thumbnails/image/pia21751.jpg"); 
+	color: #FFFFFF;
+}
+
+fieldset {
+	border: 0;
+}
+
+#questions {
+	position: relative;
+	float: left;
+	display: inline-block;
+	width: 35%;
+}
+
+#images {
+	position: relative;
+	float: right;
+	display: inline-block;
+	width: 65%;
+	text-align: center;
+}
+
+#images img {
+	width: 75%;
+}
