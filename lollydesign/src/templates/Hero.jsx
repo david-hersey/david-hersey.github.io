@@ -1,10 +1,9 @@
 import React from "react"
-import { Container, Row } from 'bootstrap-4-react';
 
 const Hero = props => {
   return (
     <React.Fragment>
-      <img src={props.image} className='img-fluid' />
+      <img src={props.image} alt="" className='img-fluid' />
     </React.Fragment>
   )
 }

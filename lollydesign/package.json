@@ -15,13 +15,15 @@
     "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
-    "bootstrap-4-react": "0.0.59",
     "gatsby": "^2.13.39",
     "gatsby-source-prismic": "^2.3.0-alpha.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "babel-preset-gatsby": "^0.2.17",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
     "dotenv": "^8.1.0",
     "gh-pages": "^2.1.1",
     "prettier": "^1.18.2"

@@ -1,14 +1,13 @@
 import React from "react"
-import { Container, Row } from 'bootstrap-4-react';
 import Navigation from '../templates/Nav.jsx'
 
 const Index = () => {
   return (
-      <Container>
-        <Row>
+      <div className='container'>
+        <div className='row'>
           <Navigation />
-        </Row>
-      </Container>
+        </div>
+      </div>
   )
 }
 

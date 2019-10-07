@@ -1,35 +1,38 @@
 import React from "react"
-import { Container, Row } from 'bootstrap-4-react';
 import Navigation from './Nav.jsx'
 import Hero from './Hero.jsx'
 import { graphql } from "gatsby"
 
 const LandingPage = ({ data: { prismicLandingPage } }) => {
   const { data } = prismicLandingPage
-  console.log('DATA:', data)
+  if (!data) return
   return (
-    <Container>
-      <Row>
+    <div className='container'>
+      <div className='row'>
         <Navigation />
-      </Row>
-      <Row>
-        <Hero image={data.hero_image_src} />
-        <h1 dangerouslySetInnerHTML={{ __html: data.contentArea[0].header.html}} />
-      </Row>
-      <Row>
-        <div dangerouslySetInnerHTML={{ __html: data.contentArea[0].content.html }} />
-      </Row>
-      {data.contentArea[1] && (
+      </div>
+      {data.contentArea[0] && (
         <React.Fragment>
-          <Row>
-            <h2 dangerouslySetInnerHTML={{ __html: data.contentArea[1].header.html}} />
-          </Row>
-          <Row>
-            <div dangerouslySetInnerHTML={{ __html: data.contentArea[1].content.html }} />
-          </Row>
+          <div class='row'>
+            <Hero image={data.hero_image_src} />
+            <h1 dangerouslySetInnerHTML={{ __html: data.contentArea[0].header.html}} />
+          </div>
+          <div className='row'>
+            <div dangerouslySetInnerHTML={{ __html: data.contentArea[0].content.html }} />
+          </div>
         </React.Fragment>
       )}
-    </Container>
+      {data.contentArea[1] && (
+        <React.Fragment>
+          <div className='row'>
+            <h2 dangerouslySetInnerHTML={{ __html: data.contentArea[1].header.html}} />
+          </div>
+          <div>
+            <div dangerouslySetInnerHTML={{ __html: data.contentArea[1].content.html }} />
+          </div>
+        </React.Fragment>
+      )}
+    </div>
   )
 }
 
