@@ -6,7 +6,7 @@ class Home extends React.Component {
     return (
         <div className='container mt-5'>
           <h1>Home</h1>
-          <Hero />
+          <Hero image="https://via.placeholder.com/1200x400.png?text=David+Hersey" />
           <div className="row">
             <div className="col-md-12">
               <p>Front End Web Developer 13 years experience etc etc.</p>
