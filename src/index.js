@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import { reducer as formReducer } from 'redux-form';
 
 import './styles/main.scss';
-import App from './App';
+import App from './App.jsx';
 import * as serviceWorker from './serviceWorker';
 
 const rootReducer = combineReducers({

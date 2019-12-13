@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { key, id } from '../config/keys.json'
+import { domain, key, id } from '../config/keys.json'
 
 // http://www.omdbapi.com/
 
 class ApiTest extends Component {
 
   componentDidMount() {
-    fetch('http://www.omdbapi.com/?apikey=' + key + '&type=movie&' + 'i=' + id)
+    fetch(domain + '?apikey=' + key + '&type=movie&' + 'i=' + id)
     .then(results => {
       return results.json();
     }).then(data => {
