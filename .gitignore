@@ -24,3 +24,4 @@ yarn-error.log*
 
 # Don't push any keys etc
 /src/config/keys.json
+/src/server/mailer/config/index.js
