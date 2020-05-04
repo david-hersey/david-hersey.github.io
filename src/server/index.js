@@ -8,7 +8,6 @@ const app = express()
 
 // NEED TO LOOK AT REDIRECT AFTER SUBMISSIONS
 
-app.set('port', 8000)
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -28,6 +27,6 @@ app.post('/contact', (req, res) => {
   })
 })
 
-app.listen(8000, () => {
+app.listen(process.env.PORT || 8000, () => {
   console.log(`App listening`);
 })
