@@ -6,7 +6,7 @@ class ContactForm extends React.Component {
 
     return (
       <div className="col-md-6">
-        <form name="contact" className="form" method="post">
+        <form className="form" action="/" name="contact" method="post">
           <input type="hidden" name="form-name" value="contact" />
           <div className="field form-group">
             <div className="control">
