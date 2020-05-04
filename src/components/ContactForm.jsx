@@ -6,7 +6,8 @@ class ContactForm extends React.Component {
 
     return (
       <div className="col-md-6">
-        <form name="contact" className="form" method="POST" data-netlify="true">
+        <form name="contact" className="form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
           <div className="field form-group">
             <div className="control">
               <label className="label">First Name</label>
