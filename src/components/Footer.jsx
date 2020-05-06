@@ -4,7 +4,11 @@ class Footer extends React.Component {
   render() {
     return (
         <div className='container mt-5'>
-          THIS WLL BE A FOOTER
+          <div className='row'>
+            <div className='col-md-12'>
+              <p>Everything is in progress and functionality and context always being considered.</p>
+            </div>
+          </div>
         </div>
       )
   }

@@ -7,7 +7,7 @@ import React from 'react';
 class Hero extends React.Component {
   render() {
     return (
-        <div className='mt-5'>
+        <div>
           <img src={this.props.image} className='img-fluid' />
         </div>
       )

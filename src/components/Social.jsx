@@ -1,4 +1,5 @@
 import React from 'react';
+// import Tweets from  './Tweets.jsx';
 // Going to use this page to pump some data in 
 // Called it social because I felt this might be good data to use???
 
@@ -6,6 +7,7 @@ import React from 'react';
 
 class Social extends React.Component {
 
+  /* 
   constructor(props) {
     super(props);
     this.state = {
@@ -28,12 +30,24 @@ class Social extends React.Component {
       })
     })
   }
+  */
     
   render() {
     return (
       <div className='container mt-5'>
         <h1>Social</h1>
-        <div className="row">
+        <p>For now this is links to my relevant socials.</p>
+        <p>Going forward a more involved socials page</p>
+        <div className='row'>
+          <div className='col-md-6'>
+            <a href='https://www.linkedin.com/in/david-hersey-b948294a'>Linked In</a>
+          </div>
+        </div>
+        {/*<div className='row'>
+          <Tweets />
+        </div>*/}
+        
+        {/*<div className="row">
          <div>Now I am: {this.state.users.gender}</div>
         </div>
        
@@ -46,7 +60,7 @@ class Social extends React.Component {
               <div key={key}>{value}</div>
             )
           })}
-        </div>
+        </div>*/}
       
       </div>
     )

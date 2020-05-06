@@ -15,9 +15,10 @@ class Contact extends React.Component {
     return (
       <div className='container mt-5'>
         <h1>Contact</h1>
-        <Suspense fallback={<Spinner />}>
+        {/*<Suspense fallback={<Spinner />}>
           <Hero image='https://images.chessingtonholidays.co.uk/seo/offers/black-friday/black-friday-40-v2-d1.jpg' />
-        </Suspense>
+        </Suspense>*/}
+        <Hero image="https://via.placeholder.com/1200x400.png?text=Contact" />
         <ContactForm onSubmit={this.handleContact} />
       </div>
     )

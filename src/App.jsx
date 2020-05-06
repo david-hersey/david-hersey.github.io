@@ -5,6 +5,7 @@ import {
   Link
 } from 'react-router-dom';
 import Footer from './components/Footer.jsx';
+// import Prompt from './components/Prompt.jsx';
 import Spinner from './components/Spinner.jsx';
 
 // https://clubhouse.io/developer-how-to/reacts-suspense-is-going-to-evolve-over-the-coming/
@@ -20,7 +21,7 @@ class App extends React.Component {
       <div className='App'>
         <div className="container">
         <Router>
-          <nav className='navbar fixed-top navbar-expand-lg navbar-light'>
+          <nav className='navbar fixed-top navbar-expand-lg navbar-dark'>
             <button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
               <span className='navbar-toggler-icon'></span>
             </button>
@@ -41,12 +42,16 @@ class App extends React.Component {
               </ul>
             </div>
           </nav>
-          <Suspense fallback={<Spinner />}>
-            <Route path="/about" component={About} />
-            <Route path="/social" component={Social} />
-            <Route path="/contact" component={Contact} />
-            <Route exact path="/" component={Home} />
-          </Suspense>
+          <div className='container mt-5'>
+            <div className='row'>
+              <Suspense fallback={<Spinner />}>
+                <Route path="/about" component={About} />
+                <Route path="/social" component={Social} />
+                <Route path="/contact" component={Contact} />
+                <Route exact path="/" component={Home} />
+              </Suspense>
+            </div>
+          </div>
         </Router>
         <Footer />
         </div>

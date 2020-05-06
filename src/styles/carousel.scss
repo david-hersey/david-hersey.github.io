@@ -1,0 +1,15 @@
+// Carousel related SCSS all to be tidied
+
+.carousel {
+  margin-bottom: 10px;
+  &-caption {
+    color: $black;
+    h5 {
+      text-transform: capitalize;
+    }
+  }
+}
+
+
+
+
