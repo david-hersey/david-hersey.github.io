@@ -1,13 +1,12 @@
-import React from 'react';
+import React from 'react'
 // import Tweets from  './Tweets.jsx';
-// Going to use this page to pump some data in 
+// Going to use this page to pump some data in
 // Called it social because I felt this might be good data to use???
 
 // Perhaps also look at https://mockaroo.com/
 
 class Social extends React.Component {
-
-  /* 
+  /*
   constructor(props) {
     super(props);
     this.state = {
@@ -31,8 +30,8 @@ class Social extends React.Component {
     })
   }
   */
-    
-  render() {
+
+  render () {
     return (
       <div className='container mt-5'>
         <h1>Social</h1>
@@ -43,14 +42,14 @@ class Social extends React.Component {
             <a href='https://www.linkedin.com/in/david-hersey-b948294a'>Linked In</a>
           </div>
         </div>
-        {/*<div className='row'>
+        {/* <div className='row'>
           <Tweets />
-        </div>*/}
-        
-        {/*<div className="row">
+        </div> */}
+
+        {/* <div className="row">
          <div>Now I am: {this.state.users.gender}</div>
         </div>
-       
+
         <div className="row">
           <div>Name: </div>
           {this.state.users.name && Object.values(this.state.users.name).map((value, key) => {
@@ -60,11 +59,11 @@ class Social extends React.Component {
               <div key={key}>{value}</div>
             )
           })}
-        </div>*/}
-      
+        </div> */}
+
       </div>
     )
   }
 }
 
-export default Social;
+export default Social

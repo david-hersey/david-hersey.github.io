@@ -7,9 +7,6 @@ import Spinner from './Spinner.jsx';
 const Hero = lazy(() => import('./Hero.jsx'));
 
 class Contact extends React.Component {
-  handleContact = values => {
-    console.log(values);
-  };
 
   render() {
     return (
@@ -18,8 +15,10 @@ class Contact extends React.Component {
         {/*<Suspense fallback={<Spinner />}>
           <Hero image='https://images.chessingtonholidays.co.uk/seo/offers/black-friday/black-friday-40-v2-d1.jpg' />
         </Suspense>*/}
-        <Hero image="https://via.placeholder.com/1200x400.png?text=Contact" />
-        <ContactForm onSubmit={this.handleContact} />
+        <Suspense fallback={<Spinner />}>
+          <Hero image="https://via.placeholder.com/1200x400.png?text=Contact" />
+        </Suspense>
+        <ContactForm />
       </div>
     )
   }
