@@ -12,6 +12,7 @@ class Prompt extends React.Component {
   handleMessage = event => {
     console.log('HANDLE MESSAGE:', event)
     console.log('HANDLE MESSAGE STATE BEFORE:', this.state.accepted)
+    console.log('WILL SET A COOKIE ON THIS')
     this.setState({
       accepted: true
     })

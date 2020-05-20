@@ -14,6 +14,10 @@ const About = lazy(() => import('./components/About.jsx'))
 const Social = lazy(() => import('./components/Social.jsx'))
 const Contact = lazy(() => import('./components/Contact.jsx'))
 const Home = lazy(() => import('./components/Home.jsx'))
+// Projects
+const Alton = lazy(() => import('./components/Alton.jsx'))
+const Legoland = lazy(() => import('./components/Legoland.jsx'))
+const Warwick = lazy(() => import('./components/Warwick.jsx'))
 
 class App extends React.Component {
   render () {
@@ -49,6 +53,9 @@ class App extends React.Component {
                   <Route path='/social' component={Social} />
                   <Route path='/contact' component={Contact} />
                   <Route exact path='/' component={Home} />
+                  <Route path='/alton' component={Alton} />
+                  <Route path='/legoland' component={Legoland} />
+                  <Route path='/warwick' component={Warwick} />
                 </Suspense>
               </div>
             </div>

@@ -16,12 +16,12 @@ class Home extends React.Component {
         <div className='container mt-5'>
           <h1>Home</h1>
           <Hero image="https://via.placeholder.com/800x400.png?text=Home800" tabupimage="https://via.placeholder.com/1200x400.png?text=Home1200" />
-          <p>Playing with using Redux to switch Homepage themes: (console logging out to look at actions/reducers)</p>
-          {this.props.theme.mode === 'light' ? (
-            <button className="btn btn-switcher" onClick={() => this.props.switchTheme(darkTheme)}>Switch Homepage to Dark Theme</button>
+          <p>Playing with using Redux to switch Homepage themes (console logging out to look at css set by actions/reducers):</p>
+          <p>{this.props.theme.mode === 'light' ? (
+            <button className="btn btn-switcher" onClick={() => this.props.switchTheme(darkTheme)}>Switch Homepage to Theme Two</button>
           ) : (
-            <button className="btn btn-switcher" onClick={() => this.props.switchTheme(lightTheme)}>Switch Homepage to Light Theme</button>
-          )}
+            <button className="btn btn-switcher" onClick={() => this.props.switchTheme(lightTheme)}>Switch Homepage to Theme One</button>
+          )}</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet nisi maximus lectus malesuada vehicula non at magna. Aliquam erat volutpat. Donec et libero aliquet, ullamcorper urna id, ornare turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id faucibus tellus. Aenean pretium convallis nisi, et porttitor felis sagittis ut. Praesent porta turpis vitae neque egestas, pharetra porttitor tortor sodales. Donec pretium eros sed tellus bibendum euismod. Curabitur ac enim sed arcu convallis imperdiet.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet nisi maximus lectus malesuada vehicula non at magna. Aliquam erat volutpat. Donec et libero aliquet, ullamcorper urna id, ornare turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id faucibus tellus. Aenean pretium convallis nisi, et porttitor felis sagittis ut. Praesent porta turpis vitae neque egestas, pharetra porttitor tortor sodales. Donec pretium eros sed tellus bibendum euismod. Curabitur ac enim sed arcu convallis imperdiet.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet nisi maximus lectus malesuada vehicula non at magna. Aliquam erat volutpat. Donec et libero aliquet, ullamcorper urna id, ornare turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id faucibus tellus. Aenean pretium convallis nisi, et porttitor felis sagittis ut. Praesent porta turpis vitae neque egestas, pharetra porttitor tortor sodales. Donec pretium eros sed tellus bibendum euismod. Curabitur ac enim sed arcu convallis imperdiet.</p>
