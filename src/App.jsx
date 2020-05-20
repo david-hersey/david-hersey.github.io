@@ -14,6 +14,10 @@ const About = lazy(() => import('./components/About.jsx'))
 const Social = lazy(() => import('./components/Social.jsx'))
 const Contact = lazy(() => import('./components/Contact.jsx'))
 const Home = lazy(() => import('./components/Home.jsx'))
+// Projects
+const Alton = lazy(() => import('./components/Alton.jsx'))
+const Legoland = lazy(() => import('./components/Legoland.jsx'))
+const Warwick = lazy(() => import('./components/Warwick.jsx'))
 
 class App extends React.Component {
   render () {
@@ -28,16 +32,16 @@ class App extends React.Component {
               <div className='collapse navbar-collapse' id='navbarSupportedContent'>
                 <ul className='navbar-nav mr-auto'>
                   <li className='nav-item'>
-                    <Link to='/' className='nav-link'>Home</Link>
+                    <Link to='/' className='nav-link' data-action="Clicked" data-category="Nav Links" data-label="Home Link">Home</Link>
                   </li>
                   <li className='nav-item'>
-                    <Link to='/about' className='nav-link'>About</Link>
+                    <Link to='/about' className='nav-link' data-action="Clicked" data-category="Nav Links" data-label="About Link">About</Link>
                   </li>
                   <li className='nav-item'>
-                    <Link to='/social' className='nav-link'>Social</Link>
+                    <Link to='/social' className='nav-link' data-action="Clicked" data-category="Nav Links" data-label="Social Link">Social</Link>
                   </li>
                   <li className='nav-item'>
-                    <Link to='/contact' className='nav-link'>Contact</Link>
+                    <Link to='/contact' className='nav-link' data-action="Clicked" data-category="Nav Links" data-label="Contact Link">Contact</Link>
                   </li>
                 </ul>
               </div>
@@ -49,6 +53,9 @@ class App extends React.Component {
                   <Route path='/social' component={Social} />
                   <Route path='/contact' component={Contact} />
                   <Route exact path='/' component={Home} />
+                  <Route path='/alton' component={Alton} />
+                  <Route path='/legoland' component={Legoland} />
+                  <Route path='/warwick' component={Warwick} />
                 </Suspense>
               </div>
             </div>

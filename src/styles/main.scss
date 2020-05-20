@@ -1,5 +1,6 @@
 // Main SCSS all to be tidied
 
+@import 'mixins';
 @import 'colours';
 @import 'carousel';
 @import 'nav';
@@ -8,7 +9,7 @@
 @import 'card';
 
 body {
-  background: url('../images/code_bg.jpg') no-repeat $mainBackground;
+  background: url('../images/code_bg.jpg') no-repeat #FFFFFF;
   background-attachment: fixed;
   color: $white;
   overscroll-behavior: none;
@@ -18,7 +19,11 @@ input {
   float: right;
 }
 
-
+.linkedinLogo {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
 
 
 .spinner {
