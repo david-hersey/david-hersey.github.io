@@ -32,14 +32,17 @@ class Social extends React.Component {
   */
 
   render () {
+
+    const linkedInLogo = require('../images/linkedin.svg')
+
     return (
       <div className='container mt-5'>
         <h1>Social</h1>
-        <p>For now this is links to my relevant socials.</p>
+        <p>For now this is links to socials.</p>
         <p>Going forward a more involved socials page</p>
         <div className='row'>
           <div className='col-md-6'>
-            <a href='https://www.linkedin.com/in/david-hersey-b948294a'>Linked In</a>
+            <a href='https://www.linkedin.com/in/david-hersey-b948294a' data-action="Clicked" data-category="Social Links" data-label="Linkedin"><img src={linkedInLogo} className="linkedinLogo" /></a>
           </div>
         </div>
         {/* <div className='row'>

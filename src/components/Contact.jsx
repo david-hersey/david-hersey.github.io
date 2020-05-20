@@ -16,7 +16,7 @@ class Contact extends React.Component {
           <Hero image='https://images.chessingtonholidays.co.uk/seo/offers/black-friday/black-friday-40-v2-d1.jpg' />
         </Suspense>*/}
         <Suspense fallback={<Spinner />}>
-          <Hero image="https://via.placeholder.com/1200x400.png?text=Contact" />
+          <Hero image="https://via.placeholder.com/800x400.png?text=Contac800" tabupimage="https://via.placeholder.com/1200x400.png?text=Contact1200" />
         </Suspense>
         <ContactForm />
       </div>

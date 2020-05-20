@@ -1,8 +1,25 @@
 // Card related SCSS all to be tidied
 
 .card {
-  color: $black
+  color: $black;
+
+  .cta {
+    &::after {
+      @include arrow;
+      background-size: 30px 30px;
+      filter: invert(32%) sepia(19%) saturate(3404%) hue-rotate(230deg) brightness(99%) contrast(98%);
+      float: right;
+      height: 30px;
+      position: relative;
+      transition: transform 1s ease-in-out;
+      width: 30px;
+    }
+    &:hover::after {
+      transform: rotate(-90deg);
+    }
+  }
 }
+
 
 
 
