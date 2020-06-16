@@ -1,6 +1,12 @@
 import React from 'react'
+import MailCheck from 'react-mailcheck'
 
 class ContactForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {inputText: ''};
+  }
+
   render () {
     return (
       <div className='col-md-6'>
@@ -21,7 +27,31 @@ class ContactForm extends React.Component {
           <div className='field form-group'>
             <div className='control'>
               <label className='label' htmlFor='email'>Email</label>
-              <input id='email' className='input form-control' name='email' component='input' type='email' placeholder='Email Address' required />
+              <MailCheck email={this.state.inputText}>
+                {suggestion => (
+                  <div>
+                    <input 
+                      id='email' 
+                      className='input form-control' 
+                      name='email' 
+                      component='input' 
+                      type='email' 
+                      placeholder='Email Address' 
+                      value={ this.state.inputText }
+                      onChange={(e) => { this.setState({ inputText: e.target.value }) }}
+                      required 
+                    />
+                    {suggestion &&
+                      <div className='email-suggestion'>
+                        Did you mean 
+                        <a 
+                          onClick={(e) => { this.setState({ inputText: suggestion.full }) }}
+                        > {suggestion.full}</a> ?
+                      </div>
+                    }
+                  </div>
+                )}
+              </MailCheck>
             </div>
           </div>
           <div className='field form-group'>

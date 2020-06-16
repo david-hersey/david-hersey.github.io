@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import Card from './Card.jsx'
 
 class About extends React.Component {
@@ -6,10 +8,11 @@ class About extends React.Component {
     return (
       <div className='container mt-5'>
         <h1>About</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet nisi maximus lectus malesuada vehicula non at magna. Aliquam erat volutpat. Donec et libero aliquet, ullamcorper urna id, ornare turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id faucibus tellus. Aenean pretium convallis nisi, et porttitor felis sagittis ut. Praesent porta turpis vitae neque egestas, pharetra porttitor tortor sodales. Donec pretium eros sed tellus bibendum euismod. Curabitur ac enim sed arcu convallis imperdiet.</p>
-        <div className='row flex-wrap'>
-          <Card images={['alton.png', 'warwick.png', 'legoland.png', 'warwick.png']} />
-        </div>
+        <p>After completing my Multimedia Degree I was at the forefront of the emerging Web Design community. During the last 15 years, my work experience has involved everything from static site design through to enterprise level applications. I take pride in building projects from the ground up, from wireframes through to functional interfaces, putting the end user experience first and translating business requirements into high quality software. I see modern frameworks and web technologies as tools to deliver a great user experience and I am not afraid to learn new things. I have worked in large teams in a fast paced environment and have lots of experience of working with other engineers on a shared code base. My specialist area is ecommerce for travel and tourism but my skill set is diverse and will translate to any software industry.</p>
+        <Link to="/contact" className="btn btn-primary cta" data-action="" data-category="" data-label="">Please do get in touch</Link>
+        {/*<div className='row flex-wrap'>
+          <Card images={['alton.png', 'warwick.png', 'legoland.png', 'warwick.png', 'sas.png']} title='' link='true' header='true' />
+        </div>*/}
       </div>
     )
   }

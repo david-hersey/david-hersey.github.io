@@ -15,6 +15,15 @@ body {
   overscroll-behavior: none;
 }
 
+.btn-card {
+  width: 100%;
+}
+
+.email-suggestion a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 input {
   float: right;
 }
@@ -25,6 +34,9 @@ input {
     width: 50px;
 }
 
+.overlay {
+    background-color: #141c3a;
+}
 
 .spinner {
     /* If it is displayed in a flex container */
@@ -62,5 +74,25 @@ input {
     width: 100px;
     height: 100px;
 }
+
+.work-thumbnail {
+    transform: scale(1);
+    transition: .25s ease-in-out;
+}
+
+
+
+/* BELOW HEER ARE IMPORTS OF TEST STYLING SHEETS */
+
+
+
+
+
+
+/* https://codepen.io/jouanmarcel/pen/NLgVjm */
+@import 'futureHover';
+
+/* https://codepen.io/tobiasglaus/pen/wxepwv */
+@import 'shakeHover';
 
 
