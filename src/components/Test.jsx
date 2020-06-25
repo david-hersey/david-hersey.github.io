@@ -16,7 +16,7 @@ class TestPage extends React.Component {
         <div className='container mt-5'>
           <h1>Test Page</h1>
           <Hero image="https://via.placeholder.com/800x400.png?text=TestPage800" tabupimage="https://via.placeholder.com/1200x400.png?text=TestPage1200" />
-          <p>Playing with using Redux to switch the page theme (console logging out to look at css set by actions/reducers):</p>
+          <p>Playing with using Redux to switch the page theme of this single page (console logging out to look at css set by actions/reducers):</p>
           <p>{this.props.theme.mode === 'light' ? (
             <button className="btn btn-switcher" onClick={() => this.props.switchTheme(darkTheme)}>Switch Test Page to Theme Two</button>
           ) : (

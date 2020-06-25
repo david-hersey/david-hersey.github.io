@@ -12,7 +12,7 @@ class Hero extends React.Component {
     return (
       <div>
         {this.props.images ? (
-          <Carousel images={['alton.png', 'warwick.png']} />
+          <Carousel images={this.props.images} />
         ) : (
           <picture>
             <source srcSet={this.props.tabupimage} media='(min-width: 800px)' />

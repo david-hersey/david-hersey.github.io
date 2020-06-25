@@ -23,6 +23,8 @@ const Theme = lazy(() => import('./components/Theme.jsx'))
 const Theatre = lazy(() => import('./components/Theatre.jsx'))
 const Ssg = lazy(() => import('./components/Ssg.jsx'))
 const Test = lazy(() => import('./components/Test.jsx'))
+const TestTwo = lazy(() => import('./components/TestTwo.jsx'))
+const Work = lazy(() => import('./components/Work.jsx'))
 
 // https://www.npmjs.com/package/react-cookie-consent
 
@@ -44,9 +46,6 @@ class App extends React.Component {
                   <li className='nav-item'>
                     <Link to='/contact' className='nav-link' data-action="Clicked" data-category="Nav Links" data-label="Contact Link">Contact</Link>
                   </li>
-                  <li className='nav-item'>
-                    <Link to='/test' className='nav-link' data-action="Clicked" data-category="Nav Links" data-label="Test page Link">Test Page</Link>
-                  </li>
                 </ul>
               </div>
             </nav>
@@ -65,6 +64,8 @@ class App extends React.Component {
                   <Route path='/merlin-theme-parks' component={Merlin} />
                   <Route path='/theme-parks' component={Theme} />
                   <Route path='/test' component={Test} />
+                  <Route path='/test-two' component={TestTwo} />
+                  <Route path='/work' component={Work} />
                 </Suspense>
               </div>
             </div>

@@ -6,7 +6,7 @@ class Theatre extends React.Component {
     return (
       <div className='container mt-5'>
         <h1>Theatre</h1>
-        <p>.....and a variety of white label landing pages/booking flows.</p>
+        <p>Working with and providing the end to end breaks solution for all of the major London based agents, shows and theatres through both inhouse and a variety of white labelled brands.</p>
         <div className='row flex-wrap'>
           <Card images={['poe.png', 'sas.png']} />
         </div>

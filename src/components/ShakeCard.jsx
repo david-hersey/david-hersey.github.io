@@ -58,7 +58,7 @@ class ShakeCard extends React.Component {
             </div>
             <div class="previews">
               <div class="preview-image">
-                <a href='/theme-parks#other'><img src="./images/screenshots/paultons.png" /></a>
+                <a href='/work'><img src="./images/screenshots/paultons.png" /></a>
               </div>
               <div class="preview-image">
                 <img src="https://www.popphoto.com/sites/popphoto.com/files/styles/1000_1x_/public/images/2018/07/00-otherworldly-national-park.jpg?itok=1bxhktRC&fc=50,50" />
