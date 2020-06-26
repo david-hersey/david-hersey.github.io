@@ -63,9 +63,9 @@ class App extends React.Component {
                   <Route path='/static-site' component={Ssg} />
                   <Route path='/merlin-theme-parks' component={Merlin} />
                   <Route path='/theme-parks' component={Theme} />
-                  <Route path='/test' component={Test} />
-                  <Route path='/test-two' component={TestTwo} />
-                  <Route path='/work' component={Work} />
+                  <Route path='test' component={Test} />
+                  <Route path='test-two' component={TestTwo} />
+                  <Route path='work' component={Work} />
                 </Suspense>
               </div>
             </div>
