@@ -68,7 +68,7 @@ class Home extends React.Component {
               <li><img src='./images/portfolio.svg' className='work-image' alt='Portfolio Logo' /></li>
               <li><img src='./images/hand-finger-right.svg' className='work-image work-pointer' alt='Hand Logo' /></li>
               <li><Link to='/theme-parks'><img src='./images/theme-park.svg' className='work-image' alt='Theme Park Logo' /></Link></li>
-              <li><Link to='/theatre'>Test Page</Link><img src='./images/theatre-masks.svg' className='work-image' alt='Theatre Logo' /></Link></li>
+              <li><Link to='/theatre'><img src='./images/theatre-masks.svg' className='work-image' alt='Theatre Logo' /></Link></li>
             </ul>
           </div>
         </div>
