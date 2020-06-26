@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 class Home extends React.Component {
   render () {
@@ -55,7 +56,7 @@ class Home extends React.Component {
             <ul className='text-left'>
               <li>Professionally I am currently moving landing pages from an inhouse PHP driven CMS feeding sites on a PHP codebase, across to a cloud based headless CMS feeding S3 hosted static site files on a Node/React codebase.</li>
               <li>Personally I am currently developing a site for a designer using Gatsby, Prismic and is built and hosted with Netlify</li>
-              <li>Testing things out on some pages: <a href='/test'>Test Page</a> and <a href='/test-two'>Test Page</a></li>
+              <li>Testing things out on some pages: <Link to='/test'>Test Page</Link> and <Link to='/test-two'>Test Page</Link></li>
               <li />
             </ul>
           </div>
@@ -66,8 +67,8 @@ class Home extends React.Component {
             <ul className='work-list'>
               <li><img src='./images/portfolio.svg' className='work-image' alt='Portfolio Logo' /></li>
               <li><img src='./images/hand-finger-right.svg' className='work-image work-pointer' alt='Hand Logo' /></li>
-              <li><a href='/theme-parks' title='Theme Parks'><img src='./images/theme-park.svg' className='work-image' alt='Theme Park Logo' /></a></li>
-              <li><a href='/theatre' title='Theatre'><img src='./images/theatre-masks.svg' className='work-image' alt='Theatre Logo' /></a></li>
+              <li><Link to='/theme-parks'><img src='./images/theme-park.svg' className='work-image' alt='Theme Park Logo' /></Link></li>
+              <li><Link to='/theatre'>Test Page</Link><img src='./images/theatre-masks.svg' className='work-image' alt='Theatre Logo' /></Link></li>
             </ul>
           </div>
         </div>
