@@ -1,6 +1,7 @@
 // Card related SCSS all to be tidied
 
 .card {
+  border: none;
   color: $black;
 
   .cta {
@@ -16,6 +17,14 @@
     }
     &:hover::after {
       transform: rotate(-90deg);
+    }
+  }
+
+  &-img-top {
+    transition: transform .2s;
+
+    &:hover {
+      transform: scale(1.1);
     }
   }
 }

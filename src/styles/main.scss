@@ -7,24 +7,81 @@
 @import 'spinner';
 @import 'alert';
 @import 'card';
+@import 'backgroundSlide';
 
 body {
-  background: url('../images/code_bg.jpg') no-repeat #FFFFFF;
-  background-attachment: fixed;
-  color: $white;
+  color: $black;
+  font-family: 'Roboto Mono';
   overscroll-behavior: none;
+}
+
+.btn-card {
+  width: 100%;
+}
+
+.container {
+    &-main {
+        position: relative;
+    }
+}
+
+.email-suggestion a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.work-list{
+    animation: slidein 3s;
+}
+
+.work-pointer {
+    animation: 3s workpointer infinite;
+}
+
+@keyframes workpointer {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-10px);
+    }
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0;
+        width: 100%;
+    }
 }
 
 input {
   float: right;
 }
 
-.linkedinLogo {
+.linkedinLogo, .work-image {
     display: inline-block;
     height: 50px;
     width: 50px;
 }
 
+.work-list {
+    list-style: none;
+
+    li {
+        display: inline;
+        padding: 2%;
+    }
+}
+
+.overlay {
+    background-color: #141c3a;
+}
 
 .spinner {
     /* If it is displayed in a flex container */
@@ -62,5 +119,26 @@ input {
     width: 100px;
     height: 100px;
 }
+
+
+.work-thumbnail {
+    transform: scale(1);
+    transition: .25s ease-in-out;
+}
+
+
+
+/* BELOW HEER ARE IMPORTS OF TEST STYLING SHEETS */
+
+
+
+
+
+
+/* https://codepen.io/jouanmarcel/pen/NLgVjm */
+@import 'futureHover';
+
+/* https://codepen.io/tobiasglaus/pen/wxepwv */
+@import 'shakeHover';
 
 

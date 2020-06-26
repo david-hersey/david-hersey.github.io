@@ -9,7 +9,13 @@ import { Link } from 'react-router-dom'
 
 class Card extends React.Component {
   render () {
-    const { images } = this.props
+    const { cardtitle, images, path, link, header } = this.props
+
+    const cardTitle = cardtitle
+
+    const imagePath = path || './images/screenshots/'
+
+    const linkRequired = link || false
 
     const title = (image) => {
       let strippedTitle = image.replace(/\.[^/.]+$/, '')
@@ -21,25 +27,33 @@ class Card extends React.Component {
       return cleanedTitle.charAt(0).toUpperCase() + cleanedTitle.slice(1);
     }
 
-    const card = images.map((image, index) => 
-        <div className='col-xs-12 col-sm-6 d-sm-flex'>
+    const card = images.map((image, index) => {
+      console.log('INDEX', index)
+
+      return (
+        <div className='col-xs-12 col-md-4 col-sm-6 d-sm-flex'>
           <div className='d-sm-flex flex-sm-column pos-rel mb-3'>
             <div className="card">
-              <img className='img-fluid card-img-top' src={require(`../images/screenshots/${image}`)} alt={cleanedTitle(image) + ' SEO landing page'} />
+              <img className='img-fluid card-img-top' src={imagePath + image} alt={cleanedTitle(image)} />
               <div className="card-body">
-                <h5 className="card-title">{cleanedTitle(image)}</h5>
-                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <Link to={`/${title(image)}`} className="btn btn-primary cta" data-action="Clicked" data-category="Card Links" data-label={cleanedTitle(image) + ' - About Card'}>More about projects></Link>
+                {header &&
+                  <h5 className="card-title">{cardTitle || cleanedTitle(image)}</h5>
+                }
+                {/* <p className="card-text"></p> */}
+                {link &&
+                  <Link to={linkRequired || `/${title(image)}`} className="btn btn-card btn-primary cta" data-action="Clicked" data-category="Card Links" data-label={cleanedTitle(image) + ' - About Card'}>More about {cardTitle}</Link>
+                }
               </div>
             </div>
           </div>
         </div>
-    )
+      )
+    })
 
     return (
-      <div className="row">
+      <React.Fragment>
         {card}
-      </div>
+      </React.Fragment>
     )
   }
 }
