@@ -2,9 +2,9 @@ import React from 'react'
 import MailCheck from 'react-mailcheck'
 
 class ContactForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {inputText: ''};
+  constructor (props) {
+    super(props)
+    this.state = { inputText: '' }
   }
 
   render () {
@@ -30,25 +30,25 @@ class ContactForm extends React.Component {
               <MailCheck email={this.state.inputText}>
                 {suggestion => (
                   <div>
-                    <input 
-                      id='email' 
-                      className='input form-control' 
-                      name='email' 
-                      component='input' 
-                      type='email' 
-                      placeholder='Email Address' 
-                      value={ this.state.inputText }
+                    <input
+                      id='email'
+                      className='input form-control'
+                      name='email'
+                      component='input'
+                      type='email'
+                      placeholder='Email Address'
+                      value={this.state.inputText}
                       onChange={(e) => { this.setState({ inputText: e.target.value }) }}
-                      required 
+                      required
                     />
                     {suggestion &&
                       <div className='email-suggestion'>
-                        Did you mean 
-                        <a 
+                        Did you mean
+                        <button
                           onClick={(e) => { this.setState({ inputText: suggestion.full }) }}
-                        > {suggestion.full}</a> ?
-                      </div>
-                    }
+                        > {suggestion.full}
+                        </button> ?
+                      </div>}
                   </div>
                 )}
               </MailCheck>

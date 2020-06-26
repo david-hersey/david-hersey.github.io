@@ -41,10 +41,10 @@ class App extends React.Component {
               <div className='collapse navbar-collapse' id='navbarSupportedContent'>
                 <ul className='navbar-nav mr-auto'>
                   <li className='nav-item'>
-                    <Link to='/' className='nav-link' data-action="Clicked" data-category="Nav Links" data-label="Home Link">Home</Link>
+                    <Link to='/' className='nav-link' data-action='Clicked' data-category='Nav Links' data-label='Home Link'>Home</Link>
                   </li>
                   <li className='nav-item'>
-                    <Link to='/contact' className='nav-link' data-action="Clicked" data-category="Nav Links" data-label="Contact Link">Contact</Link>
+                    <Link to='/contact' className='nav-link' data-action='Clicked' data-category='Nav Links' data-label='Contact Link'>Contact</Link>
                   </li>
                 </ul>
               </div>

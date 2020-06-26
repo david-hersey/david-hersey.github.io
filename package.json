@@ -161,5 +161,14 @@
     "presets": [
       "react-app"
     ]
+  },
+  "standard": {
+    "ignore": [
+      "config/paths.js",
+      "App.test.js",
+      "./reducers/theme.js",
+      "serviceWorker.js",
+      "./components/Theme.jsx"
+    ]
   }
 }

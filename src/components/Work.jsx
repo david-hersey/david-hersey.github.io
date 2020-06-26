@@ -1,18 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
-import Card from './Card.jsx'
 
 class Work extends React.Component {
   render () {
     return (
       <div className='container mt-5'>
         <h1>Projects</h1>
-        {/*<p>Work copy</p>
-        <div className='row flex-wrap'>
-          <Card images={['logo-blue.png']} path='./images/' cardtitle='Theme Parks' link='merlin-entertainment' header='true' />
-          <Card images={['aws.png']} path='./images/' cardtitle='SSG' link='static-site' header='true' />
-        </div>*/}
         <h4>Reduce email address calls to CC</h4>
         <p>Many customers initially entered an incorrect email address:</p>
         <p>Whilst we had a customer facing booking management system that allowed customers to log in and change this becuase an incorrect email had been stored, they couldn't log in.</p>

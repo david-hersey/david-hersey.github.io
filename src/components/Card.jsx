@@ -18,13 +18,13 @@ class Card extends React.Component {
     const linkRequired = link || false
 
     const title = (image) => {
-      let strippedTitle = image.replace(/\.[^/.]+$/, '')
+      const strippedTitle = image.replace(/\.[^/.]+$/, '')
       return strippedTitle
     }
 
     const cleanedTitle = (image) => {
-      let cleanedTitle = image.replace(/\.[^/.]+$/, '')
-      return cleanedTitle.charAt(0).toUpperCase() + cleanedTitle.slice(1);
+      const cleanedTitle = image.replace(/\.[^/.]+$/, '')
+      return cleanedTitle.charAt(0).toUpperCase() + cleanedTitle.slice(1)
     }
 
     const card = images.map((image, index) => {
@@ -33,16 +33,14 @@ class Card extends React.Component {
       return (
         <div className='col-xs-12 col-md-4 col-sm-6 d-sm-flex'>
           <div className='d-sm-flex flex-sm-column pos-rel mb-3'>
-            <div className="card">
+            <div className='card'>
               <img className='img-fluid card-img-top' src={imagePath + image} alt={cleanedTitle(image)} />
-              <div className="card-body">
+              <div className='card-body'>
                 {header &&
-                  <h5 className="card-title">{cardTitle || cleanedTitle(image)}</h5>
-                }
+                  <h5 className='card-title'>{cardTitle || cleanedTitle(image)}</h5>}
                 {/* <p className="card-text"></p> */}
                 {link &&
-                  <Link to={linkRequired || `/${title(image)}`} className="btn btn-card btn-primary cta" data-action="Clicked" data-category="Card Links" data-label={cleanedTitle(image) + ' - About Card'}>More about {cardTitle}</Link>
-                }
+                  <Link to={linkRequired || `/${title(image)}`} className='btn btn-card btn-primary cta' data-action='Clicked' data-category='Card Links' data-label={cleanedTitle(image) + ' - About Card'}>More about {cardTitle}</Link>}
               </div>
             </div>
           </div>
@@ -51,9 +49,9 @@ class Card extends React.Component {
     })
 
     return (
-      <React.Fragment>
+      <>
         {card}
-      </React.Fragment>
+      </>
     )
   }
 }

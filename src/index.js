@@ -10,7 +10,7 @@ import App from './App.jsx'
 import themeReducer from './reducers/theme'
 
 const store = createStore(
-  combineReducers({themeReducer}),
+  combineReducers({ themeReducer }),
   applyMiddleware(thunk)
 )
 
@@ -20,4 +20,3 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 )
-
