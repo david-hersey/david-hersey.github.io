@@ -1,7 +1,5 @@
 import React from 'react'
 
-// import Hero from './Hero.jsx'
-
 class Theme extends React.Component {
   render () {
     var TxtRotate = function (el, toRotate, period) {
@@ -75,11 +73,6 @@ class Theme extends React.Component {
             data-rotate='[ " Alton Towers", " Chessington World of Adventures", " Legoland", " Thorpe Park", " Paultons Park", " Warwick Castle" ]'
           />
         </h3>
-        {/*
-        <div className='row flex-wrap'>
-          <Hero images={['./images/screenshots/legoland/legoland_availability_1.png', './images/screenshots/thorpe/thorpe_availability.png', './images/screenshots/chessington/chessington_availability.png', './images/screenshots/paultons.png']} />
-        </div>
-        */}
       </div>
     )
   }
