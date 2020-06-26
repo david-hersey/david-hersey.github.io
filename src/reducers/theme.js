@@ -9,7 +9,7 @@ const themeReducer = (state = initialState, action) => {
   console.log('HERE REDUCER THEME STATE:', state)
   switch (action.type) {
     case SWITCH_THEME:
-      let newState = {
+      const newState = {
         ...state,
         theme: { ...state.theme, ...action.baseTheme }
       }
