@@ -16,7 +16,7 @@ class Hero extends React.Component {
         ) : (
           <picture>
             <source srcSet={this.props.tabupimage} media='(min-width: 800px)' />
-            <img src={this.props.image} className='img-fluid' />
+            <img src={this.props.image} className='img-fluid' alt={this.props.image} />
           </picture>
         )}
       </div>

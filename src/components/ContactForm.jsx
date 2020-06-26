@@ -44,10 +44,10 @@ class ContactForm extends React.Component {
                     {suggestion &&
                       <div className='email-suggestion'>
                         Did you mean
-                        <a
+                        <button
                           onClick={(e) => { this.setState({ inputText: suggestion.full }) }}
                         > {suggestion.full}
-                        </a> ?
+                        </button> ?
                       </div>}
                   </div>
                 )}

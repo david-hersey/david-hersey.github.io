@@ -64,10 +64,10 @@ class Home extends React.Component {
           <div className='col-md-12 text-center'>
             <h5>Work:</h5>
             <ul className='work-list'>
-              <li><img src='./images/portfolio.svg' className='work-image' /></li>
-              <li><img src='./images/hand-finger-right.svg' className='work-image work-pointer' /></li>
-              <li><a href='/theme-parks' title='Theme Parks'><img src='./images/theme-park.svg' className='work-image' /></a></li>
-              <li><a href='/theatre' title='Theatre'><img src='./images/theatre-masks.svg' className='work-image' /></a></li>
+              <li><img src='./images/portfolio.svg' className='work-image' alt='Portfolio Logo' /></li>
+              <li><img src='./images/hand-finger-right.svg' className='work-image work-pointer' alt='Hand Logo' /></li>
+              <li><a href='/theme-parks' title='Theme Parks'><img src='./images/theme-park.svg' className='work-image' alt='Theme Park Logo' /></a></li>
+              <li><a href='/theatre' title='Theatre'><img src='./images/theatre-masks.svg' className='work-image' alt='Theatre Logo' /></a></li>
             </ul>
           </div>
         </div>
