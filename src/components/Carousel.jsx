@@ -5,7 +5,7 @@ class Carousel extends React.Component {
     const { images } = this.props
 
     const carouselItem = images.map((image, index) =>
-      <div className={'carousel-item ' + (index === 0 ? 'active' : '')}>
+      <div className={'carousel-item ' + (index === 0 ? 'active' : '')} key={index}>
         <img className='d-block w-100' src={image} alt='' />
       </div>
     )
