@@ -7,13 +7,37 @@
 @import 'spinner';
 @import 'alert';
 @import 'card';
-@import 'backgroundSlide';
+
+.animated-images {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding: 100px 0;
+  width: 100%;
+}
+
+.animated-section {
+  margin-bottom: 50px;
+}
 
 body {
   color: $black;
   font-family: 'Roboto Mono';
   overscroll-behavior: none;
 }
+
+// CART STYLES
+.add-btn {
+    width: 100%;
+    position: absolute;
+    right: 0px;
+    bottom: 85px;
+    z-index: 9;
+    padding-right: 15px;
+    text-align: right;
+}
+// CART END
 
 .btn-card {
   width: 100%;
@@ -105,6 +129,11 @@ input {
     to { transform: rotate(360deg); }
 }
 
+.shelf-item__del {
+    background-image: url('../images/trash-bin.svg');
+    background-size: cover;
+}
+
 .spinner-small::before {
     width: 24px;
     height: 24px;
@@ -128,17 +157,6 @@ input {
 
 
 
-/* BELOW HEER ARE IMPORTS OF TEST STYLING SHEETS */
 
-
-
-
-
-
-/* https://codepen.io/jouanmarcel/pen/NLgVjm */
-@import 'futureHover';
-
-/* https://codepen.io/tobiasglaus/pen/wxepwv */
-@import 'shakeHover';
 
 

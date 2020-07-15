@@ -1,9 +1,10 @@
 import React from 'react'
-import Typing from 'react-typing-animation';
+import Typing from 'react-typing-animation'
+
+// https://www.npmjs.com/package/react-typing-animation
 
 class Theme extends React.Component {
   render () {
-
     return (
       <div className='container mt-5'>
         <h1>Theme Parks</h1>

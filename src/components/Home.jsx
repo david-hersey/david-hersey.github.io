@@ -11,9 +11,9 @@ class Home extends React.Component {
           <p className='text-left'>Beginning my journey as a Front End Web Developer nearly 14 years ago, I have worked on huge range of digital products for both business and consumer use. This has been predominantley in the travel industry but the skills I have attained will allow me to work across/within any industry.</p>
           <p className='text-left'>Personally I'm quiet, happy, naturally curious and enjoy improving one challenge at a time.</p>
           <p className='text-left'>I don't see myself as quite full stack but I have touched most areas and am happy to get involved.</p>
-          <p className='text-left'>I love to code with the same eye for detail as a designer.</p>
+          <p className='text-left'>I like working with designers and love to code with the same eye for detail as a designer.</p>
           <p className='text-left'>Having this experience across all areas of the stack allows me to ensure the Front End work is carried out withe the full scope in mind.</p>
-          <p className='text-left'>Working in an Aglie way ensures we get the code rolled out but I always have an eye on the future.</p>
+          <p className='text-left'>Working in an Aglie way ensures code is deployed but there is always an eye on the future.</p>
         </div>
         <div className='row'>
           <div className='col-md-4 text-center'>
@@ -29,7 +29,7 @@ class Home extends React.Component {
               <li>Agile Development, JIRA, Scrum, Kanban</li>
               <li>TDD, Testing Tools and Frameworks – SeleniumJS, JasmineJS, MochaJS, Sinon, Chai</li>
               <li>Version Control Systems – Github, Bitbucket, SVN</li>
-              <li>Database technologies - Oracle MySQL, DB2, Apache CouchDB</li>
+              <li>Database technologies - Oracle MySQL, DB2, Apache CouchDB, Firebase</li>
               <li>Metrics and tracking - GTM, GA, Looker</li>
               <li>Adobe Creative Suite - Photoshop, Flash, Wire-framing</li>
             </ul>
@@ -49,6 +49,8 @@ class Home extends React.Component {
               <li>Mentoring new starters</li>
               <li>Assisting teams within the business to use/get the best out of the systems</li>
               <li>I have an eye for detail with an appreciation for design</li>
+              <li>Having worked in the travel industry for 14 years I have always owned the products I work on/with</li>
+              <li>As mentioned above I have worked on the push to develop and simplify codebases BUT I have strong experience on picking up and running with work on legacy code</li>
             </ul>
           </div>
           <div className='col-md-4 text-center'>
@@ -56,8 +58,7 @@ class Home extends React.Component {
             <ul className='text-left'>
               <li>Professionally I am currently moving landing pages from an inhouse PHP driven CMS feeding sites on a PHP codebase, across to a cloud based headless CMS feeding S3 hosted static site files on a Node/React codebase.</li>
               <li>Personally I am currently developing a site for a designer using Gatsby, Prismic and is built and hosted with Netlify</li>
-              <li>Testing things out on some pages: <Link to='/test'>Test Page</Link> and <Link to='/test-two'>Test Page</Link></li>
-              <li />
+              <li>Testing things out on some pages: <Link to='/test'>Test Page</Link> and <Link to='/test-two'>Test Page</Link> and <Link to='/test-three'>Test Page</Link> and <Link to='/test-four'>Test Page</Link></li>
             </ul>
           </div>
         </div>

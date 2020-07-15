@@ -1,15 +1,14 @@
-import React from 'react';
+import React from 'react'
 
 class Prompt extends React.Component {
-
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
     this.state = {
       accepted: false
-    };
+    }
   }
 
-  handleMessage (event) => {
+  handleMessage (event) {
     console.log('HANDLE MESSAGE:', event)
     console.log('HANDLE MESSAGE STATE BEFORE:', this.state.accepted)
     console.log('WILL SET A COOKIE ON THIS')
@@ -19,27 +18,27 @@ class Prompt extends React.Component {
     console.log('HANDLE MESSAGE STATE AFTER:', this.state.accepted)
   }
 
-  componentDidMount() {
+  componentDidMount () {
     this.setState({
       accepted: false
     })
     console.log('ACCEPTED STATE:', this.state.accepted)
   }
 
-  render() {
+  render () {
     return (
-      <React.Fragment>
-        <div className="alert alert-warning alert-dismissible fade show fixed-bottom" role="alert">
+      <>
+        <div className='alert alert-warning alert-dismissible fade show fixed-bottom' role='alert'>
           <p>
             <strong>Please can we all agree that everything is ok?</strong>
-            <button type="button" className="close" data-dismiss="alert" aria-label="Close" data-action="Footer Message Accepted" data-category="Messaging" data-label="Accept Alert" onClick={this.handleMessage}>
-              <span aria-hidden="true">&times;</span>
+            <button type='button' className='close' data-dismiss='alert' aria-label='Close' data-action='Footer Message Accepted' data-category='Messaging' data-label='Accept Alert' onClick={this.handleMessage}>
+              <span aria-hidden='true'>&times;</span>
             </button>
           </p>
         </div>
-      </React.Fragment>
+      </>
     )
   }
 }
 
-export default Prompt;
+export default Prompt

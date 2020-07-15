@@ -31,7 +31,7 @@ class Card extends React.Component {
       console.log('INDEX', index)
 
       return (
-        <div className='col-xs-12 col-md-4 col-sm-6 d-sm-flex'>
+        <div className='col-xs-12 col-md-4 col-sm-6 d-sm-flex' key={index}>
           <div className='d-sm-flex flex-sm-column pos-rel mb-3'>
             <div className='card'>
               <img className='img-fluid card-img-top' src={imagePath + image} alt={cleanedTitle(image)} />
