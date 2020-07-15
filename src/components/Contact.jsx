@@ -1,11 +1,11 @@
 import React from 'react'
-//import React, { Suspense, lazy } from 'react'
+// import React, { Suspense, lazy } from 'react'
 import ContactForm from './ContactForm.jsx'
 // import Spinner from './Spinner.jsx'
 
 // https://clubhouse.io/developer-how-to/reacts-suspense-is-going-to-evolve-over-the-coming/
 // https://github.com/BenoitZugmeyer/react-suspense-demo
-//const Hero = lazy(() => import('./Hero.jsx'))
+// const Hero = lazy(() => import('./Hero.jsx'))
 
 class Contact extends React.Component {
   render () {
