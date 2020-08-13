@@ -13,6 +13,7 @@ import Spinner from './components/Spinner.jsx'
 // https://github.com/BenoitZugmeyer/react-suspense-demo
 const About = lazy(() => import('./components/About.jsx'))
 const Social = lazy(() => import('./components/Social.jsx'))
+const Blog = lazy(() => import('./components/Blog.jsx'))
 const Contact = lazy(() => import('./components/Contact.jsx'))
 const Home = lazy(() => import('./components/Home.jsx'))
 // Projects and others outsdie main nav
@@ -49,10 +50,13 @@ class App extends React.Component {
               <div className='collapse navbar-collapse' id='navbarSupportedContent'>
                 <ul className='navbar-nav mr-auto'>
                   <li className='nav-item'>
-                    <Link to='/' className='nav-link' data-action='Clicked' data-category='Nav Links' data-label='Home Link'>Home</Link>
+                    <Link to='/' className='nav-link' data-action='Click' data-category='Nav Links' data-label='Home Link'>Home</Link>
                   </li>
                   <li className='nav-item'>
-                    <Link to='/contact' className='nav-link' data-action='Clicked' data-category='Nav Links' data-label='Contact Link'>Contact</Link>
+                    <Link to='/blog' className='nav-link' data-action='Click' data-category='Nav Links' data-label='Blog Link'>Blog</Link>
+                  </li>
+                  <li className='nav-item'>
+                    <Link to='/contact' className='nav-link' data-action='Click' data-category='Nav Links' data-label='Contact Link'>Contact</Link>
                   </li>
                 </ul>
               </div>
@@ -61,6 +65,7 @@ class App extends React.Component {
               <div className='row'>
                 <Suspense fallback={<Spinner />}>
                   <Route path='/about' component={About} />
+                  <Route path='/blog' component={Blog} />
                   <Route path='/social' component={Social} />
                   <Route path='/contact' component={Contact} />
                   <Route path='/confirmation' component={Confirmation} />
