@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Cart, AddCartButton, CartReducers } from 'react-purchase-cart'
 import { connect, Provider } from 'react-redux'
 import { createStore, combineReducers } from 'redux'
+import { Redirect } from 'react-router-dom'
 import { sortItemsByPrice } from '../actions/checkout'
 import { productReducers } from '../reducers/checkout'
 
@@ -106,6 +107,8 @@ class Checkout extends Component {
     // WOULD USE FORM ACTION BUT AT THIS POINT UNSURE OF THIS USE IN MODULE
     window.sessionStorage.setItem('data', JSON.stringify(data))
     window.location.href = '/payment'
+    // NEED TO PROGRAMITICALLY MOVE TO NEW ENDPOINT:
+    // return <Redirect to='/payment' />
   }
 
   render () {
