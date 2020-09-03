@@ -1,6 +1,8 @@
 import React from 'react'
 import MailCheck from 'react-mailcheck'
 
+// Look at: https://www.npmjs.com/package/react-credit-cards
+
 class PaymentForm extends React.Component {
   constructor (props) {
     super(props)

@@ -9,6 +9,9 @@ import Footer from './components/Footer.jsx'
 import CookieConsent from 'react-cookie-consent'
 import Spinner from './components/Spinner.jsx'
 
+// Have a look at Toastify?
+// https://github.com/fkhadra/react-toastify
+
 // https://clubhouse.io/developer-how-to/reacts-suspense-is-going-to-evolve-over-the-coming/
 // https://github.com/BenoitZugmeyer/react-suspense-demo
 const About = lazy(() => import('./components/About.jsx'))
