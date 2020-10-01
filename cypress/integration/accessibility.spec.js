@@ -26,7 +26,8 @@ describe('Form Field accessibility test', () => {
     const testName = `${componentName} has no detectable accessibility violations on load`;
 
     it(testName, () => {
-      cy.visit(route, {
+      cy.visit({
+        url: route,
         failOnStatusCode: false
       });
       cy.injectAxe();
