@@ -18,7 +18,7 @@ const terminalLog = (violations) => {
     cy.task('table', violationData)
 }
 
-const routes = ['test-three'];
+const routes = ['contact', 'test-three'];
 
 describe('Form Field accessibility test', () => {
   routes.forEach((route) => {
