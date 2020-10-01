@@ -27,10 +27,6 @@ describe('Form Field accessibility test', () => {
 
     it(testName, () => {
       cy.visit(route, {failOnStatusCode: false});
-      cy.request({
-        url: route,
-        failOnStatusCode: false
-      });
       cy.injectAxe();
       
       cy.get('.field').each((element, index) => {
